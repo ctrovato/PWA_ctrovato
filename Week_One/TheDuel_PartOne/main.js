@@ -49,8 +49,7 @@
             var f2 = Math.floor(Math.random() * (pTwoDamage - minDamageTwo) + minDamageTwo);
 
 
-            //console.log(f1);
-            //console.log(f2);
+
 
             //Damage Infliction
             pOneHealth -= f1;
@@ -113,8 +112,6 @@
 
     };
 
-
-//The script begins here//
 
 //    console.log("Script Begin");
 
