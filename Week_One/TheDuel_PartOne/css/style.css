@@ -3,7 +3,7 @@
 }
 
 body{
-    background: url('images/grey_wash_wall.png') repeat;
+    background: url('../images/grey_wash_wall.png') repeat;
 }
 
 #scores{
@@ -48,8 +48,8 @@ body{
 }
 
 #fight_bg img{
-    height: 45%;
-    width: 45%;
+    height: 100%;
+    width: 100%;
 }
 
 .heading{

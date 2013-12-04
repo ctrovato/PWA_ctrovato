@@ -19,8 +19,8 @@
 
 
     //Player Damage
-    var pOneDamage = 15;
-    var pTwoDamage = 15;
+    var pOneDamage = 16;
+    var pTwoDamage = 16;
 
 
     //Player Health

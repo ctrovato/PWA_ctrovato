@@ -19,6 +19,7 @@
      - return the average from the function
      - console.log the answer outside of the function
 
+
      2.  create a function named 'fullName'
      - accept 2 parameters into the function that are strings (firstname and lastname)
      - return the name after it has been concatenated
@@ -53,32 +54,43 @@
     console.log('------ Goal2: Assignment: JavaScript Practice ----------');
 
     console.log("1. avg of an array of numbers");
-    var avgNumbers = function(arr){
+    var avgNumbers = function(average){
 
-        //CODE GOES HERE
+
     };
 
     console.log('avg number = ', avgNumbers([1,2,3,4,5]));
 
+
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
-    //PUT FUNCTION HERE
+   var first=James
+   var last= Bond
+
+
+
 
     console.log(fullName('James', 'Bond'));
+
+
 
     //--------------------------------------------------------
     console.log("3. word count");
     var ipsum = "this is test text that is being used as input to a function"
 
-    //PUT FUNCTION HERE
+
 
     console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
     console.log("4. sentence char count");
 
-    //PUT FUNCTION HERE
+
+    function charCount(){
+        var n= ipsum.length;
+
+    }
 
     console.log(charCount(ipsum));
 
