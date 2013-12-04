@@ -16,8 +16,7 @@
     //Player Names
     var pOneName = "Batman";
     var pTwoName = "Spiderman";
-    //var pOneName = prompt("Please type the name for player 1.");
-    //var pTwoName = prompt("Please type the name for player 2.");
+
 
     //Player Damage
     var pOneDamage = 15;
@@ -55,11 +54,7 @@
             pOneHealth -= f1;
             pTwoHealth -= f2;
 
-            //alert(pOneName + ":" + pOneHealth + "  =START=  " + pTwoName + ":" + pTwoHealth);
 
-
-            //console.log(pOneHealth);
-            //console.log(pTwoHealth);
 
 
             var results = winnerCheck();
