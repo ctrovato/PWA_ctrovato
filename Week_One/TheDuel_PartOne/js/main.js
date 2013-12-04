@@ -14,8 +14,8 @@
 
 
     //Player Names
-    var pOneName = "Batman";
-    var pTwoName = "Spiderman";
+    var pOneName = "CARMINE";
+    var pTwoName = "IRON MAN";
 
 
     //Player Damage
