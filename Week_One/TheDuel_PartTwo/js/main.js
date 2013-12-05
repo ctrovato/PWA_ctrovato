@@ -13,48 +13,28 @@
     console.log("Fight!");
 
 
-    //Player Names
-    var pOneName = "CARMINE";
-    var pTwoName = "IRON MAN";
-
-
-    //Player Damage
-    var pOneDamage = 15;
-    var pTwoDamage = 15;
-
-
-    //Player Health
-    var pOneHealth = 100;
-    var pTwoHealth = 100;
-
+    var pOne = ["CARMINE", 15, 100];
+    var pTwo = ["IRON MAN", 15, 100];
     var round = 0;
 
-
-
     function fight() {
-        //console.log("In the fight function");
 
-        alert(pOneName + ": " + pOneHealth + "  =START=  " + pTwoHealth + " :" + pTwoName);
+        alert(pOne[0] + ": " + pOne[2] + "  =START=  " + pTwo[2] + " :" + pTwo[0]);
 
         for (i=0; i < 10; i++) {
-            //console.log(i);
-
-            // Math.floor(Math.random() * (max - min) + min);
-
-            var minDamageOne = pOneDamage * .5;
-            var minDamageTwo = pTwoDamage * .5;
-
-            var f1 = Math.floor(Math.random() * (pOneDamage - minDamageOne) + minDamageOne);
-            var f2 = Math.floor(Math.random() * (pTwoDamage - minDamageTwo) + minDamageTwo);
+            /* console.log(i); */
 
 
+            var minDamageOne = pOne[1] * .5;
+            var minDamageTwo = pTwo[1] * .5;
+
+            var f1 = Math.floor(Math.random() * (pOne[1] - minDamageOne) + minDamageOne);
+            var f2 = Math.floor(Math.random() * (pTwo[1] - minDamageTwo) + minDamageTwo);
 
 
-            //Damage Infliction
-            pOneHealth -= f1;
-            pTwoHealth -= f2;
-
-
+            /* Damage Infliction */
+            pOne[2] -= f1;
+            pTwo[2] -= f2;
 
 
             var results = winnerCheck();
@@ -66,7 +46,7 @@
 
                 round++;
 
-                alert(pOneName + ": " + pOneHealth + "  =ROUND " + round + " OVER=  " + pTwoHealth + " :" + pTwoName);
+                alert(pOne[0] + ": " + pOne[2] + "  =ROUND " + round + " OVER=  " + pTwo[2] + " :" + pTwo[0]);
 
             } else {
 
@@ -83,23 +63,23 @@
 
     function winnerCheck() {
 
-//        console.log("in winnerCheck Functions");
-        console.log(pOneName + ": " + pOneHealth + "  =ROUND " + round + " OVER=  " + pTwoHealth + " :" + pTwoName);
+
+        console.log(pOne[0] + ": " + pOne[2] + "  =ROUND " + round + " OVER=  " + pTwo[2] + " :" + pTwo[0]);
 
         var result = "No Winner";
 
 
-        if (pOneHealth < 1 && pTwoHealth < 1) {
+        if (pOne[2] <= 0 && pTwo[2] <= 0) {
 
             result = "You Both Died";
 
-        } else if (pOneHealth < 1) {
+        } else if (pOne[2] <= 0) {
 
-            result =  pTwoName + " Wins!";
+            result =  pTwo[0] + " Wins!";
 
-        } else if (pOneHealth < 1) {
+        } else if (pOne[2] <= 0) {
 
-            result =  pTwoName + " Wins!";
+            result =  pTwo[0] + " Wins!";
 
         };
 
@@ -108,7 +88,7 @@
     };
 
 
-//    console.log("Script Begin");
+/* Calls the fight function script below */
 
     fight();
 
