@@ -150,6 +150,7 @@
     //--------------------------------------------------------
     console.log("5. how many vowels in a word");
 
+
     var vowelWord = "mississippi"; //word that we will be finding the number of vowels for
     var vowels = vowelsInWord(vowelWord); //is equal to the functions result
 
