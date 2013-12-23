@@ -17,16 +17,16 @@
 //
 //
 ///*_____*/
-//for (var i = 0;i<4; i++){
-//    z+=i;
-//
-//    console.log(z);
-//
-//}
+for (var i = 0;i<4; i++){
+    z+=i;
 
-var a = [1,2 [5,6,7,["a","b"],8]];
-a [2] [3] [1] = "whoa";
+    console.log(z);
 
-console.log(a[2]);
+}
+
+//var a = [1,2 [5,6,7,["a","b"],8]];
+//a [2] [3] [1] = "whoa";
+//
+//console.log(a[2]);
 
 

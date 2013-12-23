@@ -9,13 +9,13 @@ console.log("start canvas painter main.js");
 	canvas.height = 480;
 	var ctx = canvas.getContext("2d");
 
-	ctx.fillStyle = '#cccccc'; //set background color
+	ctx.fillStyle = '#000000'; //set background color
 	ctx.fillRect (0,0,640,480);
 
 	var mouse = utils.getMouse(canvas); //the getmouse function returns and object literal that has X and Y of the Mouse
 	var draw = false; //boolean that holds that status of whether or not the mouse is being clicked
 
-	var color = "rgb(0,0,255)";
+	var color = "#0000FF";
 	ctx.strokeStyle=color;
 
 	canvas.addEventListener("mousedown", onDraw);
